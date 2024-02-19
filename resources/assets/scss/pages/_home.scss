@@ -1,0 +1,51 @@
+@use "sass:math";
+
+.intro {
+    p {
+        margin-bottom: 30px;
+
+        &.download .fa {
+            color: $color-orange;
+            font-size: 24px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.cta {
+    margin: 60px 0;
+}
+
+.cta .cta-item {
+    max-width: 190px;
+    vertical-align: top;
+    width: percentage(math.div(1, 5));
+}
+
+    .cta-item a {
+        &:hover {
+            .cta-link {
+                background-color: darken(#d7d7d7, 10%);
+                color: #363636;
+            }
+
+            .cta-img {
+                filter: grayscale(100%);
+            }
+        }
+    }
+
+    .cta-link,
+    .cta-img {
+        border-bottom: none;
+        display: block;
+    }
+
+    .cta-link {
+        background-color: #d7d7d7;
+        border-bottom: none;
+        color: #363636;
+        font-family: $ff-montserrat;
+        padding: 15px;
+    }

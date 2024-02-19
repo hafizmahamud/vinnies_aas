@@ -1,0 +1,282 @@
+html,
+body {
+    height: 100%;
+}
+
+@include large-screen {
+    .container {
+        width: 1600px;
+    }
+
+    .login .container {
+        width: 1000px;
+    }
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+hr {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#site-content {
+    flex: 1;
+}
+
+#site-header {
+    background: $color-blue url('../img/bg-header.jpg') top center no-repeat;
+    color: #fff;
+    height: 140px;
+    margin-bottom: 30px;
+    overflow-y: hidden;
+    padding: 15px 0;
+
+    @include large-screen {
+        height: 135px;
+    }
+
+    .logo {
+        border-bottom: none;
+        display: block;
+        padding-top: 5px; // magic number to vertical align logo on specific height
+    }
+
+    .fa {
+        color: $color-orange;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .separator {
+        margin: 0 5px 0 15px;
+    }
+}
+
+    .site-description {
+        font-family: $ff-montserrat;
+        font-size: 18px;
+        margin-left: 10px; //magic number to left align this text with bottom navigation
+
+        @include large-screen() {
+            font-size: 36px;
+        }
+    }
+
+    .site-user {
+        font-size: 13px;
+        font-weight: 300;
+
+        @include large-screen {
+            font-size: 16px;
+        }
+
+        a {
+            border-bottom: none;
+            color: #fff;
+        }
+    }
+
+#site-nav {
+    font-size: 0;
+    font-family: $ff-montserrat;
+    margin-top: 30px;
+
+    @include large-screen {
+        margin-top: 10px;
+    }
+
+    @media screen and (min-width:992px) and (max-width:1599px){
+    		min-width:807px;
+    		position:relative;
+    		top:8px;
+    }
+
+    @media screen and (max-width:991px){
+    		min-width: 752px;
+    	  position: relative;
+    	  top: -40px;
+    }
+
+    @media screen and (max-width:767px){
+    		display: none;
+    }
+
+    a {
+        background-color: $color-orange;
+        border-bottom: none;
+        color: #fff;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 10px 15px;
+        position: relative;
+
+        @include large-screen {
+            font-size: 16px;
+            padding: 15px;
+        }
+
+        &:hover,
+        &.active {
+            background-color: lighten($color-orange, 5%);
+        }
+
+        &:after {
+            bottom: 15px;
+            background-color: rgba(#fff, 0.5);
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 15px;
+            width: 1px;
+        }
+
+        &.first {
+            border-top-left-radius: 15px;
+        }
+
+        &.last {
+            border-top-right-radius: 15px;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+a {
+    border-bottom: 1px solid $link-color;
+
+    &:hover {
+        border-bottom-color: $link-hover-color;
+    }
+}
+
+#site-content {
+    padding-bottom: 60px;
+}
+
+.page-title {
+    color: $color-blue;
+    font-family: $ff-montserrat;
+    font-size: 36px;
+    margin: 30px 0;
+}
+
+#site-footer {
+    background-color: $color-blue;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-bottom: 0;
+
+    img {
+        margin-right: 15px;
+    }
+}
+
+.well {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.text-large {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.select2-container--bootstrap .select2-selection {
+    border-color: #ebebeb;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.font-weight-normal {
+    font-weight: normal !important;
+}
+
+.pt-0 {
+    padding-top: 0 !important;
+}
+
+.pt-1 {
+    padding-top: 15px !important;
+}
+
+.pt-2 {
+    padding-top: 30px !important;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.mt-1 {
+    margin-top: 15px !important;
+}
+
+.mt-2 {
+    margin-top: 30px !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.mb-1 {
+    margin-bottom: 15px !important;
+}
+
+.mb-2 {
+    margin-bottom: 30px !important;
+}
+
+.ml-0 {
+    margin-left: 0 !important;
+}
+
+.ml-1 {
+    margin-left: 15px !important;
+}
+
+.ml-2 {
+    margin-left: 30px !important;
+}
+
+.bb-none {
+    border-bottom: none !important;
+}
+
+.bt-none {
+    border-top: none !important;
+}
+
+.rd-container {
+    z-index: 1060; //10 more than .modal
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        width: 1000px;
+    }
+}
+
+a.disabled {
+    pointer-events: none;
+    color: #ccc;
+}

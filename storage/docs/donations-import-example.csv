@@ -1,0 +1,5 @@
+Donation State,Donation Received Date-Time,Donor Name on Certificate,Donation Amount (AUD),Donor requires certificate,Special allocation required?,Special allocation Details,Address,City/Suburb,Post Code,Email,Phone,Mobile,Online Donation
+NSW,22/6/2020 16:51,Mr Donor 1,70,YES,YES,any gender aged 6 to 10,address test,NSW,6000,email@test.com,2223344555,44455566677,YES
+NSW,22/6/2020 16:51,Mr Test Donor 2,48,YES,YES,any gender aged 16 to 18,,,,,,,NO
+NSW,22/6/2020 16:51,Mr Test Donor 3,716,NO,YES,girls aged 12 to 14,address test2,NSW,60600,email2@test.com,2223344555,44455566677,NO
+NSW,22/6/2020 16:51,Mr Test Donor 4,140,YES,,,,,,,,,YES

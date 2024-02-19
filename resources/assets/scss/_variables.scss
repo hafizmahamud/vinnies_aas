@@ -1,0 +1,38 @@
+
+// Vinnies specific variables
+// -----------------------------------------------------------------------
+$color-blue:                #0054a4;
+$color-orange:              #fd6f00;
+
+
+// Bootstrap overrides
+// -----------------------------------------------------------------------
+$brand-primary:             $color-blue;
+$brand-success:             #2ecc40;
+$brand-info:                #7fdbff;
+$brand-warning:             #fd6f00;
+$brand-danger:              #f7412c;
+
+$container-large-desktop:   1000px;
+
+$ff-roboto:                 Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ff-montserrat:             Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:    $ff-roboto;
+
+$headings-font-family:      $ff-montserrat;
+$headings-font-weight:      600;
+
+$font-size-base:            15px;
+$input-border-radius:       0;
+$link-color:                $color-orange;
+$link-hover-decoration:     none;
+$state-danger-text:         $brand-danger;
+$state-warning-text:        $color-orange;
+
+$btn-font-weight:           400;
+$btn-default-color:         #fff;
+$btn-default-bg:            #959595;
+
+$hr-border:                 #ebebeb;
+$input-border:              #ebebeb;
+

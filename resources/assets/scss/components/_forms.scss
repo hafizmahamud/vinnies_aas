@@ -1,0 +1,90 @@
+.form {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.form-heading {
+    margin-bottom: 60px;
+}
+
+.form-control {
+    box-shadow: none;
+
+    &.loading {
+        background-image: url('../img/ajax-loader.gif');
+        background-position: 97% center;
+        background-repeat: no-repeat;
+    }
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group.has-btn {
+    position: relative;
+
+    .form-control {
+        min-width: 350px;
+        padding-right: 35px; //magic number for padding of button width
+    }
+
+    .btn {
+        background-color: #fff;
+        color: #333;
+        border-radius: 0;
+        bottom: 1px; // magic number to make sure input:focus not affected
+        padding-left: 15px;
+        padding-right: 15px;
+        position: absolute;
+        right: 1px; // magic number to make sure input:focus not affected
+        top: 1px; // magic number to make sure input:focus not affected
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: #fff;
+        }
+    }
+}
+
+.has-icon .fa {
+    cursor: pointer;
+}
+
+.form-table-filter.form-inline .form-group {
+    margin-right: 10px;
+
+    label {
+        font-weight: 400;
+        margin-right: 5px;
+    }
+}
+
+.form-import {
+    margin-top: 30px;
+
+    .form-control-small {
+        width: 50%;
+    }
+}
+
+.form-reports label {
+    font-size: 14px;
+}
+
+.form-table-filter #donation_status {
+    max-width: 290px;
+}
+
+.form-control.form-control-text-danger {
+    color: #f7412c;
+}
+
+.form-control.form-control-text-success {
+    color: #3c763d;
+}

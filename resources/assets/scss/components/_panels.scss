@@ -1,0 +1,71 @@
+.panel-login {
+    background-color: $brand-primary;
+    color: #fff;
+    margin-top: 120px; // magic number according to psd
+    max-width: 395px; //magic number for > 992px, .form-control equal width to recaptcha width
+    padding: 30px;
+
+    &.panel-login-lg {
+        max-width: 500px;
+
+        .btn {
+            max-width: 280px;
+        }
+    }
+
+    .login-logo {
+        display: block;
+        margin-bottom: 30px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .panel-heading {
+        font-size: 23px; // magic number to make heading one liner
+        font-weight: 600;
+    }
+
+    .form-group {
+        margin-bottom: 30px;
+
+        &.is-last {
+            margin-bottom: 0;
+        }
+    }
+
+    .form-control {
+        height: 45px; // magic number of height in psd
+    }
+
+    sup {
+        font-size: 90%;
+    }
+
+    .btn {
+        font-size: 14px;
+        font-weight: 600;
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .text-danger {
+        color: $brand-danger;
+        font-size: 18px;
+        top: 0;
+    }
+}
+
+.panel-stats {
+    .panel-title {
+        font-family: $ff-roboto;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .panel-body {
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+}
